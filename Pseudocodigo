@@ -1,0 +1,28 @@
+Proceso ImprimirACuatroCifras
+	
+	Definir num Como Entero;
+	
+	Escribir 'Ingrese un numero' ; Sin Saltar
+	Leer num ;
+	
+	Si num>9999 Entonces
+		Escribir 'ERROR';
+	FinSi
+	
+	Si num<9 Entonces 
+		Escribir '000', num ;
+	SiNo
+		Si num<99 Entonces
+			Escribir '00', num ;
+		SiNo
+			Si num<999 Entonces
+				Escribir '0', num ;
+			SiNo
+				Si num<9999 Entonces
+					Escribir '', num ;
+				FinSi
+			FinSi
+		FinSi
+	FinSi
+	
+FinProceso
