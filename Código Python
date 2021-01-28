@@ -1,0 +1,17 @@
+# Entrada
+num = int(input("Ingresa un numero: "))
+
+# Condicionales
+if num > 9999:
+    print("ERROR")
+elif num < 9:
+    print(f"000{num}")
+    """
+    La "f" es una forma para la de salida de datos"
+    """
+elif num < 99:
+    print(f"00{num}")
+elif num < 999:
+    print(f"0{num}")
+elif num < 9999:
+    print(num)
